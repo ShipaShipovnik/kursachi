@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Список тем</title>
+  </head>
+  <body> 
+    <div class="topics-list-wrapper">
+      <div class="topics-list-container"> 
+        <table class="topics-list"> 
+          <tr class="header">
+            <th colspan="4"> 
+              <h1>Список работ</h1>
+              <input type="text" name="search" placeholder="Поиск">
+            </th>
+          </tr>
+          <tr> 
+            <th>Название работы</th>
+            <th>Краткое описание</th>
+            <th>Статус</th>
+            <th> </th>
+          </tr>
+          <tr> 
+            <td>Работа 1</td>
+            <td>Описание</td>
+            <td>В работе</td>
+            <td class="column-btns"> 
+              <button>Редактировать</button>
+            </td>
+          </tr>
+          <tr> 
+            <td>Работа 2</td>
+            <td>Описание</td>
+            <td>В работе</td>
+            <td class="column-btns"> 
+              <button>Посмотреть</button>
+            </td>
+          </tr>
+          <tr class="topics-list__bottom">
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td class="column-btns"> </td>
+          </tr>
+        </table>
+      </div>
+      <aside> 
+        <div class="aside-container"> 
+          <h1>User </h1>
+          <button>Чат</button>
+          <button>FAQ</button>
+          <button>Создать заявку на работу</button>
+          <button>Выйти</button>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

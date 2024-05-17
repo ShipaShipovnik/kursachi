@@ -1,0 +1,47 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+        title Список тем
+    body 
+        .topics-list-wrapper
+            .topics-list-container 
+                table.topics-list 
+                    tr.header
+                        th(colspan="4") 
+                           h1 Список работ
+                           input(type="text", name="search", placeholder="Поиск")
+                    tr 
+                        th Название работы
+                        th Краткое описание
+                        th Статус
+                        th 
+                    tr 
+                        td Работа 1
+                        td Описание
+                        td В работе
+                        td.column-btns 
+                            button Редактировать
+                    tr 
+                        td Работа 2
+                        td Описание
+                        td В работе
+                        td.column-btns 
+                            button Посмотреть
+                    tr.topics-list__bottom
+                        td 
+                        td 
+                        td 
+                        td.column-btns 
+            aside 
+                .aside-container 
+                    h1 User 
+                    button Чат
+                    button FAQ
+                    button Создать заявку на работу
+                    button Выйти
+
+                        
+    

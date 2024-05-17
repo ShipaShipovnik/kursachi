@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+        title Создание темы
+    body
+        form(action="").topic-creation
+            .topic-creation-container
+                .topic-creation__header.create-form-slot 
+                    h1 Создание темы
+                .topic-creation__name.create-form-slot
+                    h2 Название работы
+                    hr
+                    textarea(name="" placeholder="Введите название работы...") 
+                .topic-creation__desc.create-form-slot
+                    h2 Краткое описание работы
+                    hr
+                    textarea(name="" placeholder="Напишите краткое описание работы...") 
+                .topic-creation__prepod.create-form-slot
+                    h2 Научный руководитель
+                    hr
+                    select(name="") 
+            input(type="submit", value="Добавить тему" id="add_topic")

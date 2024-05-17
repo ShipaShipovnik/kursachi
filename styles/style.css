@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+aside {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  display: block;
+}
+aside h1 {
+  margin-bottom: 70px;
+  font-size: 36px;
+}
+aside button {
+  width: 100%;
+  background-color: #2355d7;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 20px;
+}
+
+.topics-list-wrapper {
+  width: 95%;
+  min-height: 700px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: auto 342px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+
+.topics-list-container {
+  border: 1px solid black;
+}
+
+.topics-list {
+  height: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+}
+.topics-list td,
+.topics-list th {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: left;
+}
+.topics-list .header th {
+  border-right: none;
+}
+.topics-list .header th h1 {
+  float: left;
+  font-size: 36px;
+  font-weight: 400;
+}
+.topics-list .header th input {
+  float: right;
+  height: 40px;
+  width: 200px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0.5px solid grey;
+}
+.topics-list .column-btns {
+  width: 200px;
+  text-align: center;
+  border-right: none;
+}
+.topics-list .column-btns button {
+  width: 200px;
+  background-color: #2355d7;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+  color: white;
+  font-size: 18px;
+}
+.topics-list .topics-list__bottom {
+  height: 100%;
+}
+
+.reg-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.reg-wrapper .reg-window {
+  margin: 100px auto;
+  width: 340px;
+  display: block;
+}
+.reg-wrapper .reg-window p {
+  margin-bottom: 20px;
+}
+.reg-wrapper .reg-window p span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.reg-wrapper .reg-window p a {
+  color: #2355d7;
+  text-decoration: underline;
+}
+.reg-wrapper .reg-window .reg-window__form {
+  display: block;
+}
+.reg-wrapper .reg-window .reg-window__form input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5%;
+  margin-top: 20px;
+  border: 0.5px solid grey;
+}
+.reg-wrapper .reg-window .reg-window__form input[type=submit] {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.topic-creation {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+.topic-creation .topic-creation-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  grid-template-columns: 300px auto 400px;
+  grid-template-rows: 60px 200px;
+  grid-template-areas: "header header header" "name descr prepod";
+}
+.topic-creation .topic-creation-container textarea,
+.topic-creation .topic-creation-container input {
+  width: 100%;
+  margin: 10px auto;
+  resize: vertical;
+  max-height: 70%;
+}
+.topic-creation .topic-creation-container .create-form-slot {
+  padding: 10px;
+}
+.topic-creation .topic-creation-container .topic-creation__header {
+  grid-area: header;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.topic-creation .topic-creation-container .topic-creation__name {
+  grid-area: name;
+  border-right: 1px solid black;
+}
+.topic-creation .topic-creation-container .topic-creation__desc {
+  grid-area: descr;
+  border-right: 1px solid black;
+}
+.topic-creation .topic-creation-container .topic-creation__prepod {
+  grid-area: prepod;
+}
+.topic-creation #add_topic {
+  width: 200px;
+  margin-top: 50px;
+  background-color: #2355d7;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.topics-list-wrapper-green {
+  background-color: #8bbb3d;
+  width: 95%;
+  min-height: 700px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 342px auto;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.aside-green {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  display: block;
+}
+.aside-green .aside-buttons {
+  padding: 30px 10px 0px 10px;
+  background-color: #bf5139;
+  border-radius: 20px;
+}
+.aside-green .aside-buttons button {
+  width: 100%;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 20px;
+}
+.aside-green h1 {
+  margin-bottom: 70px;
+  font-size: 30px;
+}
+
+.topics-list-container-green {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.topics-list-container-green .topics-list {
+  height: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+}
+.topics-list-container-green .topics-list td,
+.topics-list-container-green .topics-list th {
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  border-right: none;
+  border-left: none;
+}
+.topics-list-container-green .topics-list .header {
+  border: none;
+}
+.topics-list-container-green .topics-list .header th h1 {
+  float: left;
+  font-size: 36px;
+  font-weight: 400;
+}
+.topics-list-container-green .topics-list .header th input {
+  float: right;
+  height: 40px;
+  width: 200px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 0.5px solid grey;
+}
+.topics-list-container-green .topics-list .column-btns {
+  width: 200px;
+  text-align: center;
+}
+.topics-list-container-green .topics-list .column-btns button {
+  width: 200px;
+  background-color: #2355d7;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+  color: white;
+  font-size: 18px;
+}
+.topics-list-container-green .topics-list .topics-list__bottom {
+  height: 100%;
+}
+
+.reg-wrapper-green {
+  width: 100%;
+  height: 100%;
+}
+.reg-wrapper-green .reg-window-green {
+  background-color: #8bbb3d;
+  margin: 100px auto;
+  width: 370px;
+  padding: 30px;
+  display: block;
+}
+.reg-wrapper-green .reg-window-green p {
+  color: white;
+  margin-bottom: 20px;
+}
+.reg-wrapper-green .reg-window-green p span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.reg-wrapper-green .reg-window-green p a {
+  color: #2355d7;
+  text-decoration: underline;
+}
+.reg-wrapper-green .reg-window-green .reg-window__form {
+  display: block;
+}
+.reg-wrapper-green .reg-window-green .reg-window__form input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5%;
+  margin-top: 20px;
+  border: 0.5px solid grey;
+}
+.reg-wrapper-green .reg-window-green .reg-window__form input[type=submit] {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.topic-creation-green {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+}
+.topic-creation-green .topic-creation-container {
+  background-color: #8bbb3d;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  grid-template-columns: 300px auto 400px;
+  grid-template-rows: 60px 200px;
+  grid-template-areas: "header header header" "name descr prepod";
+}
+.topic-creation-green .topic-creation-container textarea,
+.topic-creation-green .topic-creation-container input {
+  width: 100%;
+  margin: 10px auto;
+  resize: vertical;
+  max-height: 70%;
+}
+.topic-creation-green .topic-creation-container .create-form-slot {
+  padding: 10px;
+}
+.topic-creation-green .topic-creation-container .topic-creation__header {
+  grid-area: header;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.topic-creation-green .topic-creation-container .topic-creation__name {
+  grid-area: name;
+  border-right: 1px solid black;
+}
+.topic-creation-green .topic-creation-container .topic-creation__desc {
+  grid-area: descr;
+  border-right: 1px solid black;
+}
+.topic-creation-green .topic-creation-container .topic-creation__prepod {
+  grid-area: prepod;
+}
+.topic-creation-green #add_topic {
+  width: 200px;
+  margin-top: 50px;
+  background-color: #2355d7;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 10px;
+  color: white;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
